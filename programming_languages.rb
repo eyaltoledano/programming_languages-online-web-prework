@@ -40,12 +40,8 @@ def reformat_languages(languages)
     languages.each do |language, attributes|
       attributes.each do |type, type_value|
         new_hash[language] = {type => type_value}
-      end
-
-      attributes.each do |type, type_value|
-        new_hash.each do |language, data|
-          data[:style] = [master_type]
-        end
+        p_language = new_hash[language]
+        p_language[:style] = [master_type]
       end
     end
   end
