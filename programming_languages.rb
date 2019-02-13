@@ -42,12 +42,11 @@ def reformat_languages(languages)
 
       attributes.each do |type, type_value|
         new_hash[language] = {type => type_value}
-        binding.pry
-
       end
 
       attributes.each do |type, type_value|
         new_hash.each do |language, data|
+          binding.pry
           data[:style] = [master_type]
         end
       end
