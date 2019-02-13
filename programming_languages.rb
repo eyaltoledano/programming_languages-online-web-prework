@@ -46,7 +46,14 @@ def reformat_languages(languages)
     end
   end
 
-
+  new_hash.each do |language, data|
+    if language == :javascript
+      data.each do |attribute, value|
+        if attribute == :style
+          value.unshift(:oo)
+      end
+    end
+  end
 
 
 
