@@ -2,10 +2,10 @@ require 'pry'
 
 # Expected hash
 # {
-#   :ruby => {
-#     :type => "interpreted",
-#     :style => [:oo]
-#   },
+  #  :ruby => {
+  #    :type => "interpreted",
+  #   :style => [:oo]
+  # },
 #   :javascript => {
 #     :type => "interpreted",
 #     :style => [:oo, :functional]
@@ -34,14 +34,15 @@ require 'pry'
 
 
 def reformat_languages(languages)
-  new_hash = []
+  new_hash = {}
 
   languages.each do |type, languages|
 
     languages.each do |language, attributes|
 
       language_attributes.each do |type, type_value|
-
+        binding.pry
+        new_hash[:language] = {:type => :type_value}
         binding.pry
 
       end
