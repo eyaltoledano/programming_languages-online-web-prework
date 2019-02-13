@@ -71,9 +71,10 @@ def reformat_languages(languages)
   languages.each do |type, languages|
     languages.each do |language, language_attributes|
 
-      binding.pry
       language_attributes.each do |type, type_value|
-        
+        new_hash << language[type] = type_value
+        binding.pry
+
       end
     end
   end
