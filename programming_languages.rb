@@ -73,7 +73,7 @@ def reformat_languages(languages)
 
       binding.pry
       language_attributes.each do |type, type_value|
-
+        
       end
     end
   end
