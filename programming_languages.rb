@@ -37,9 +37,7 @@ def reformat_languages(languages)
   new_hash = {}
 
   languages.each do |master_type, languages|
-
     languages.each do |language, attributes|
-
       attributes.each do |type, type_value|
         new_hash[language] = {type => type_value}
       end
@@ -52,6 +50,10 @@ def reformat_languages(languages)
       end
     end
   end
+
+  
+
+  
 
   new_hash
 end
